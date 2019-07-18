@@ -3,6 +3,63 @@
 }
 
 body {
+  font-family: 'Merriweather', serif;
   font-size: 1em;
+  line-height: 1.6;
+  color: grey;
 }
 
+header {
+  background: rgb(2, 2, 92);
+  display: flex;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.2em;
+}
+
+main {
+  margin: 10% 15px 0;
+}
+
+h2,
+p {
+  margin: 0 0 8px;
+}
+
+.intro {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.intro h2,
+legend {
+  font-size: 1.1em;
+  font-weight: 700;
+  color: black;
+}
+
+.intro p {
+  font-size: .9em;
+}
+
+.light {
+  font-weight: 300;
+}
+
+section:first-child {
+  border-bottom: solid 5px black;
+}
+
+section {
+  margin-bottom: 3px;
+}
+
+form {
+  border-top: solid 2px black;
+}
