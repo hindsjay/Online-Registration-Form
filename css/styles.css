@@ -102,7 +102,7 @@ textarea:focus {
 
 label {
   padding: 15px 0 10px;
-  display: inline-block;
+  display: block;
 }
 
 select {
@@ -114,12 +114,33 @@ textarea {
   padding-bottom: 45px;
 }
 
-label[for="zip-code"] {
-  display: block;
-}
-
 input:last-child {
   width: 50%;
   max-width: 145px;
 }
 
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+  padding: 0 0 0 10px;
+  display: inline-block;
+}
+
+br + label {
+  padding-top: 25px;
+}
+
+button {
+  width: 100%;
+  padding: 25px;
+  color: white;
+  background: rgb(101, 209, 173);
+  border-radius: 5px;
+  margin: 25px 0;
+}
+
+.disclosure {
+  font-size: .8em;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 120px;
+}
