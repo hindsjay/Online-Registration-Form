@@ -144,3 +144,44 @@ button {
   text-align: center;
   margin-bottom: 120px;
 }
+
+
+@media (min-width: 768px) {
+
+  main,
+  footer {
+    max-width: 600px;
+    margin: 50px auto 0;
+  }
+
+  footer {
+    margin-top: initial;
+  }
+
+  fieldset:first-child legend {
+    margin-bottom: 20px;
+  }
+
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    align-items: center;
+    height: 420px;
+  }
+
+  .flex-container label {
+    flex-basis: 20%;
+    margin-right: auto;
+  }
+  
+  .flex-container input,
+  .flex-container select {
+    flex-basis: 75%;
+  }
+
+  .flex-container label[for="zip-code"] {
+    margin-right: 30px;
+  }
+}
