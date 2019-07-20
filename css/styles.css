@@ -35,7 +35,6 @@ p {
 
 .intro {
   text-align: center;
-  padding: 8% 0 20px;
   margin-bottom: 3px;
 }
 
@@ -49,6 +48,13 @@ legend {
 .intro p,
 label {
   font-size: .9em;
+}
+
+.container {
+  padding: 20px 0;
+  margin: 15px 0;
+  background: #e5e9eb;
+  border-radius: 5px;
 }
 
 section:first-child {
@@ -115,7 +121,7 @@ textarea {
   height: 100px;
 }
 
-input:last-child {
+.flex-container input:last-child {
   width: 50%;
   max-width: 145px;
 }
@@ -130,7 +136,15 @@ br + label {
   padding-top: 25px;
 }
 
-button {
+input[type="checkbox"] + label,
+input[type="radio"] + label,
+input[type="checkbox"],
+input[type="radio"],
+input[type="submit"] {
+  cursor: pointer;
+}
+
+input[type="submit"] {
   width: 100%;
   padding: 20px;
   color: white;
@@ -153,10 +167,6 @@ button {
   footer {
     max-width: 600px;
     margin: 0 auto;
-  }
-
-  .intro {
-    padding-top: 50px;
   }
 
   fieldset:first-child legend {
