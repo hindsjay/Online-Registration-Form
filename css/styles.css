@@ -36,6 +36,7 @@ p {
 .intro {
   text-align: center;
   padding-bottom: 20px;
+  margin-bottom: 3px;
 }
 
 .intro h2,
@@ -52,10 +53,6 @@ label {
 
 section:first-child {
   border-bottom: solid 5px black;
-}
-
-section {
-  margin-bottom: 3px;
 }
 
 form {
@@ -81,9 +78,11 @@ textarea {
   background:  #ebeff0;
   border: none;
   width: 100%;
-  padding: 15px;
+  height: 55px;
+  padding: 10px 15px;
   border-radius: 3px;
   font-size: .8em;
+  transition: background 1.5s;
 }
 
 input::placeholder {
@@ -98,6 +97,7 @@ select:focus,
 textarea:focus {
   outline: none;
   border: 2px solid rgb(2, 2, 92);
+  background: blanchedalmond;
 }
 
 label {
@@ -112,6 +112,7 @@ select {
 
 textarea {
   padding-bottom: 45px;
+  height: 100px;
 }
 
 input:last-child {
@@ -131,7 +132,7 @@ br + label {
 
 button {
   width: 100%;
-  padding: 25px;
+  padding: 20px;
   color: white;
   background: rgb(101, 209, 173);
   border-radius: 5px;
@@ -167,13 +168,12 @@ button {
     flex-direction: row;
     flex-wrap: wrap;
     align-content: space-around;
-    align-items: center;
-    height: 420px;
+    height: 500px;
   }
 
   .flex-container label {
     flex-basis: 20%;
-    margin-right: auto;
+    margin: auto auto auto 0;
   }
   
   .flex-container input,
